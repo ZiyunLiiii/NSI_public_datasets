@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSI Plastic Phantom CBCT: Paired Metal and Metal-Free Scans</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+      margin: 24px;
+      color: #222;
+      line-height: 1.35;
+      background: #fff;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 30px;
+    }
+
+    h2 {
+      margin: 18px 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 6px 0 12px;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .top {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .box {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 14px;
+      background: #fafafa;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 3px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 13px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #ddd;
+      padding: 3px 6px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      width: 46%;
+      font-weight: 600;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      overflow-x: auto;
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 850px) {
+      .top {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main>
+
+  <h1>NSI Plastic Phantom CBCT: Paired Metal and Metal-Free Scans</h1>
+
+  <p>
+    <strong>Paired cone-beam CT scans</strong> of the same plastic phantom,
+    acquired with and without metal for metal artifact evaluation and correction.
+  </p>
+
+  <div class="top">
+
+    <section class="box">
+      <h2>Data:</h2>
+
+      <p>
+        Two vertical cone-beam CT acquisitions of a plastic phantom collected
+        on an NSI PRD-K416090 system. The paired scans provide matched
+        metal-present and metal-free reference cases.
+      </p>
+
+      <div class="links">
+        <a href="https://www.datadepot.rcac.purdue.edu/bouman/data/demo_nsi_vert_no_metal_all_views.tgz">
+          Plastic phantom without metal - 1200 views
+        </a><br>
+
+        <a href="https://www.datadepot.rcac.purdue.edu/bouman/data/demo_nsi_vert_metal_all_views.tgz">
+          Plastic phantom with metal - 1200 views
+        </a>
+      </div>
+    </section>
+
+    <section class="box">
+
+      <h2>Acquisition Parameters:</h2>
+
+      <table>
+        <tr><th>Scan type</th><td>Cone-beam CT</td></tr>
+        <tr><th>CT system</th><td>NSI PRD-K416090</td></tr>
+        <tr><th>Voltage</th><td>200 kV</td></tr>
+        <tr><th>Current, with metal</th><td>19 &micro;A</td></tr>
+        <tr><th>Current, without metal</th><td>100 &micro;A</td></tr>
+        <tr><th>Physical filter</th><td>0.9 mm Cu</td></tr>
+        <tr><th>Source-object distance</th><td>147.164 mm</td></tr>
+        <tr><th>Source-detector distance</th><td>569.363 mm</td></tr>
+        <tr><th>Magnification</th><td>3.87</td></tr>
+        <tr><th>Detector pixel pitch</th><td>0.127 &times; 0.127 mm</td></tr>
+        <tr><th>Detector size</th><td>1536 &times; 1920</td></tr>
+        <tr><th>Views per scan</th><td>1200</td></tr>
+        <tr><th>Rotation range</th><td>360&deg;</td></tr>
+      </table>
+
+    </section>
+
+  </div>
+
+  <section>
+
+    <h2>Preprocessing:</h2>
+
+    <p>
+      Example MBIRJAX preprocessing script:
+      <a href="">
+        [preprocessing script path to be provided]
+      </a>
+    </p>
+    <p>
+      This script is written to reconstruct the dataset using the MBIRJAX software package available from
+      <a href="https://mbirjax.readthedocs.io/en/latest/index.html">
+        MBIRJAX Documentation.
+      </a>
+    </p>
+
+  </section>
+
+  <section>
+
+    <h2>Citation:</h2>
+
+<pre><code>@misc{nsi_plastic_phantom_cbct_metal_pair_dataset,
+  author = {Li, Ziyun and Yang, Mingqi and Sharma, Vijay Kumar and
+            Toaquiza, John D. and Eshraghi, Javad and
+            Buzzard, Gregery T. and Bouman, Charles A.},
+  title = {{NSI Plastic Phantom CBCT}: Paired Metal and Metal-Free Datasets},
+  year = {2026},
+  howpublished = {\url{}}
+}</code></pre>
+
+  </section>
+
+</main>
+
+</body>
+</html>
