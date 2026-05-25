@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSI 4D Phantom CBCT: Dynamic Scan</title>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+      margin: 24px;
+      color: #222;
+      line-height: 1.35;
+      background: #fff;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      font-size: 30px;
+    }
+
+    h2 {
+      margin: 18px 0 8px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 6px 0 12px;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .top {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .box {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 14px;
+      background: #fafafa;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 3px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 13px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #ddd;
+      padding: 3px 6px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      width: 48%;
+      font-weight: 600;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      overflow-x: auto;
+      background: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 850px) {
+      .top {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main>
+
+  <h1>NSI 4D Phantom CBCT: NSI Phantom Dynamic Scan</h1>
+
+  <p>
+    <strong>Dynamic cone-beam CT scan</strong> of a 4D phantom for evaluating
+    time-resolved CT reconstruction methods.
+  </p>
+
+  <div class="top">
+
+    <section class="box">
+      <h2>Data:</h2>
+
+      <p>
+        A high-frame-rate cone-beam CT acquisition of a dynamic phantom
+        collected on an NSI PRD-K416090 system over multiple rotations.
+      </p>
+
+      <div class="links">
+        <a href="">
+          [dataset download path to be provided]
+        </a>
+      </div>
+    </section>
+
+    <section class="box">
+
+      <h2>Acquisition Parameters:</h2>
+
+      <table>
+        <tr><th>Scan type</th><td>Dynamic cone-beam CT</td></tr>
+        <tr><th>CT system</th><td>NSI PRD-K416090</td></tr>
+        <tr><th>Voltage</th><td>150 kV</td></tr>
+        <tr><th>Current</th><td>660 mA</td></tr>
+        <tr><th>Physical filter</th><td>None</td></tr>
+        <tr><th>Source-object distance</th><td>322.998 mm</td></tr>
+        <tr><th>Source-detector distance</th><td>715 mm</td></tr>
+        <tr><th>Magnification</th><td>2.21</td></tr>
+        <tr><th>Detector pixel pitch</th><td>0.254 &times; 0.254 mm</td></tr>
+        <tr><th>Detector size</th><td>300 &times; 768</td></tr>
+        <tr><th>Number of views</th><td>2400</td></tr>
+        <tr><th>Rotation range</th><td>6000&deg;</td></tr>
+      </table>
+
+      <h2>4D Parameters:</h2>
+
+      <table>
+        <tr><th>Acquisition time</th><td>30 sec</td></tr>
+        <tr><th>Frame rate</th><td>80 frames/sec</td></tr>
+        <tr><th>Rotation speed</th><td>200&deg;/sec</td></tr>
+        <tr><th>Frames per full rotation</th><td>144</td></tr>
+      </table>
+
+    </section>
+
+  </div>
+
+  <section>
+
+    <h2>Preprocessing:</h2>
+
+    <p>
+      Example MBIRJAX preprocessing script:
+      <a href="">
+        [preprocessing script path to be provided]
+      </a>
+    </p>
+    <p>
+      This script is written to reconstruct the dataset using the MBIRJAX software package available from
+      <a href="https://mbirjax.readthedocs.io/en/latest/index.html">
+        MBIRJAX Documentation.
+      </a>
+    </p>
+
+  </section>
+
+  <section>
+
+    <h2>Citation:</h2>
+
+<pre><code>@misc{nsi_4d_phantom_cbct_dataset,
+  author = {Li, Ziyun and Yang, Mingqi and Sharma, Vijay Kumar and
+            Toaquiza, John D. and Eshraghi, Javad and
+            Buzzard, Gregery T. and Bouman, Charles A.},
+  title = {{NSI 4D Phantom CBCT}: Dynamic Scan},
+  year = {2026},
+  howpublished = {\url{}}
+}</code></pre>
+
+  </section>
+
+</main>
+
+</body>
+</html>

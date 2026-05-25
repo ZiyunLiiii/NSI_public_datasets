@@ -12,6 +12,7 @@ when available, figures, preprocessing scripts, and citation information.
 | Dataset | Description | Splash Page |
 | --- | --- | --- |
 | NSI Plastic Phantom CBCT: Paired Metal and Metal-Free Scans | Paired cone-beam CT scans of the same plastic phantom acquired with and without metal for metal artifact evaluation and correction. | [View page](nsi_phantom_metal_pair/index.html) |
+| NSI 4D Phantom CBCT: NSI Phantom Dynamic Scan | Dynamic cone-beam CT scan of a 4D phantom for time-resolved reconstruction evaluation. | [View page](nsi_4D_phantom/index.html) |
 
 ## Repository Layout
 
@@ -19,6 +20,8 @@ when available, figures, preprocessing scripts, and citation information.
 NSI_public_datasets/
   README.md
   nsi_phantom_metal_pair/
+    index.html
+  nsi_4D_phantom/
     index.html
 ```
 
@@ -50,4 +53,3 @@ their Data Depot hosting location.
 
 - [Plastic phantom without metal - 1200 views](https://www.datadepot.rcac.purdue.edu/bouman/data/demo_nsi_vert_no_metal_all_views.tgz)
 - [Plastic phantom with metal - 1200 views](https://www.datadepot.rcac.purdue.edu/bouman/data/demo_nsi_vert_metal_all_views.tgz)
-
